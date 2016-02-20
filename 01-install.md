@@ -46,13 +46,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I chose to install Python 2. Although Python 3 has become increasingly popular in recent years, it seems that the majority of the books, online tutorials, and other Python documentation still use Python 2 syntax and features. As a relatively new Python coder, I wanted to be able to focus on learning the language without additionally having to worry about "translating" P2 into P3. 
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+From the command line, enter "python --version". The terminal will print the version of python used.
 
  
 
