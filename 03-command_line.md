@@ -13,8 +13,8 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-1) mkdir -p <dir 1>/<dir 2>: Make nested directory (2 in 1). Use -p option to create multiple (nested) directories in one command!
-2) cd <dir 1>: Move down into directory 1. Can use dir 1/dir 1 to move down multiple directories.
+1) mkdir -p dir 1/dir 2: Make nested directory (2 in 1). Use -p option to create multiple (nested) directories in one command!
+2) cd dir 1:             Move down into directory 1. Can use dir 1/dir 1 to move down multiple directories.
 
 
 cd .. :                     Move UP a directory. Use ../.. to move up multiple directories
