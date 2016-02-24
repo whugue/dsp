@@ -47,8 +47,8 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
+`ls`  - List contents (files and directories) within the working directory
+`ls -a`  - List contents within working directory, including dot files
 `ls -l`  
 `ls -lh`  
 `ls -lah`  
