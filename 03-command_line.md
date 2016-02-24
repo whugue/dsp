@@ -15,7 +15,8 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 1) mkdir -p dir 1/dir 2: Make nested directory (2 in 1). Use -p option to create multiple (nested) directories in one command!
 2) cd .. : Move UP a directory. Use ../.. to move up multiple directories
-3) ls path: Prints contents of directory at path within working directory. (ls alone prints WD contents).
+
+3) ls path: Prints contents of directory at path within working directory (ls alone prints WD contents).
 4) rmdir dir: Delete directory. DIR MUST BE EMPTY!
 5) rm -rf dir: Delete directory and all contents. Directory does not have to be empty.
 6) mv file path: This is command is terribly named. It does not move the file, it merely renames it.
