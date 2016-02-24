@@ -67,7 +67,15 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+1) -m: Display files as comma-delimited list (potentially useful for creating CSV datafiles
+
+2) -R: Diplay subdirectories and subdirectory contents in addition to WD contents. Helpful for looking at overall file structure.
+
+3) -g: Display contents in long format with username (i.e. all me) remove. I love to reduce clutter
+
+4) -1: Display contents as a list. I like this better than columnar format.
+
+5) -u: Sort by file access date, rather than file last modification date
 
 ---
 
