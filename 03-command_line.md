@@ -14,19 +14,16 @@ these in a couple of hours.
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
 1) mkdir -p dir 1/dir 2: Make nested directory (2 in 1). Use -p option to create multiple (nested) directories in one command!
-2) cd dir 1:             Move down into directory 1. Can use dir 1/dir 1 to move down multiple directories.
-
-
-cd .. :                     Move UP a directory. Use ../.. to move up multiple directories
-ls <path> :                 Prints contents of directory at <path> within working directory. (ls alone prints WD contents).
-rmdir <dir> :               Delete directory. MUST BE EMPTY!
-rm -rf <dir> :              Delete directory and all contents. Directory does not have to be empty :)
-mv <file path>  :           This is command is terribly named. It does not move the file, it merely renames it.
-pushd <dir>:                Go down to <dir>, but "back burner" current location for later
-popd:                       Return to "back burnered" directory
-cp -r <dir 1> <dir 2>:      Copy <dir 1> to <dir 2> within same working directory ("r"="robocopy")
-<code 1> | <command>:       Performs command on output produced by code 1 (e.g. "Pipes" output to command).
-grep <keyword> | <file>:    Search for keyword within a specific file.
+2) cd .. : Move UP a directory. Use ../.. to move up multiple directories
+3) ls path: Prints contents of directory at path within working directory. (ls alone prints WD contents).
+4) rmdir dir: Delete directory. DIR MUST BE EMPTY!
+5) rm -rf dir: Delete directory and all contents. Directory does not have to be empty.
+6) mv file path: This is command is terribly named. It does not move the file, it merely renames it.
+7) pushd dir: Go down to dir, but "back burner" current location for later
+8) popd: Return to "back burnered" directory
+9) cp -r dir 1 dir 2: Copy dir 1 to dir 2 within same working directory ("r"="robocopy")
+10) code 1 | command: Performs command on output produced by code 1 (e.g. "Pipes" output to command).
+11) grep keyword file: Search for keyword within a specific file.
 
 ---
 
