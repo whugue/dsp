@@ -47,16 +47,19 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
->`ls`  - List contents (files and directories) within the working directory
->`ls -a`  - List contents within working directory, including dot files
+`ls`  - List contents (files and directories) within the working directory
 
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
+`ls -a`  - List contents within working directory, including dot files
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls -l`  - List contents of WD in "long format" (i.e. including file mode, number of links, owner name, group name, file size (in bytes), date-time file was last modified, and path name.
+
+`ls -lh`  - Same output as ls -l, except file size is displayed in kilobites, megabytes, etc. (with units indicated) if files are large enough in order to reduce the number of digits needed to capture file size
+
+`ls -lah`  - Same output as ls -lh, except that dot files are included.
+
+`ls -t`  - List contents of working directory, sorted by last modified datetime (most recent first)
+
+`ls -Glp`  - Same output as ls -l, except output is colorized (i.e. directories are colored differently from files) and all directories contain a "/" after their names.
 
 ---
 
