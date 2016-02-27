@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I chose to use nano. I wanted to use a easy-to-learn and basic terminal editor that would allow me to focus on developing my python skills without having to face the steep learning curve that comes with learning emacs and vim as well. Additioanlly, since I think I will probably use Sublime Text for most of my programming work (see below), I did not feel it was worth the time and effort to learn a more complex terminal editor, at least not right now. 
 
 --
 
