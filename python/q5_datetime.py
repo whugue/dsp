@@ -1,8 +1,12 @@
 # Hint:  use Google to find python function
 
 ####a) 
-date_start = '01-02-2013'  
-date_stop = '07-28-2015'   
+date_start = '01-02-2013'
+date_stop = '07-28-2015'
+
+
+
+
 
 ####b)  
 date_start = '12312013'  

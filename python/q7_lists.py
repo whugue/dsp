@@ -23,21 +23,30 @@ print match_ends(['', 'x', 'xy', 'xyx', 'xx'])
 print match_ends(['aaa', 'be', 'abc', 'hello'])
 
 
-def front_x(words):
-    """
-    Given a list of strings, return a list with the strings in sorted
-    order, except group all the strings that begin with 'x' first.
-    e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
-         ['xanadu', 'xyz', 'aardvark', 'apple', 'mix'].
 
-    >>> front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa'])
-    ['xaa', 'xzz', 'axx', 'bbb', 'ccc']
-    >>> front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa'])
-    ['xaa', 'xcc', 'aaa', 'bbb', 'ccc']
-    >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
-    ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
-    """
-    raise NotImplementedError
+"""
+Given a list of strings, return a list with the strings in sorted
+order, except group all the strings that begin with 'x' first.
+e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
+    ['xanadu', 'xyz', 'aardvark', 'apple', 'mix'].
+"""
+
+def front_x(words):
+    ind=0
+    words.sort()
+
+    for word in words:
+        if word[0].lower()=="x":
+            words.remove(word)
+            words.insert(ind,word)
+            ind += 1
+
+    return words
+
+#Test Functions
+print front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa']) #['xaa', 'xzz', 'axx', 'bbb', 'ccc']
+print front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa']) # ['xaa', 'xcc', 'aaa', 'bbb', 'ccc']
+print front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark']) #['xanadu', 'xyz', 'aardvark', 'apple' 
 
 
 def sort_last(tuples):
@@ -57,37 +66,72 @@ def sort_last(tuples):
     raise NotImplementedError
 
 
+
+"""
+Given a list of numbers, return a list where all adjacent equal
+elements have been reduced to a single element, so [1, 2, 2, 3]
+returns [1, 2, 3]. You may create a new list or modify the passed
+in list.
+"""
+
 def remove_adjacent(nums):
-    """
-    Given a list of numbers, return a list where all adjacent equal
-    elements have been reduced to a single element, so [1, 2, 2, 3]
-    returns [1, 2, 3]. You may create a new list or modify the passed
-    in list.
+    temp_list=[]
 
-    >>> remove_adjacent([1, 2, 2, 3])
-    [1, 2, 3]
-    >>> remove_adjacent([2, 2, 3, 3, 3])
-    [2, 3]
-    >>> remove_adjacent([3, 2, 3, 3, 3])
-    [3, 2, 3]
-    >>> remove_adjacent([])
-    []
-    """
-    raise NotImplementedError
+    for i in range(0,len(nums)):
+        if i==0 or nums[i] != nums[i-1]:
+            temp_list.append(nums[i])
 
+    return temp_list
+
+
+#Test Function;
+print remove_adjacent([1, 2, 2, 3]) #[1, 2, 3]
+print remove_adjacent([2, 2, 3, 3, 3]) # [2, 3]
+print remove_adjacent([3, 2, 3, 3, 3]) #[3, 2, 3]
+print remove_adjacent([]) #[]
+
+
+"""
+Given two lists sorted in increasing order, create and return a
+merged list of all the elements in sorted order. You may modify
+the passed in lists. Ideally, the solution should work in "linear"
+time, making a single pass of both lists.
+"""
 
 def linear_merge(list1, list2):
-    """
-    Given two lists sorted in increasing order, create and return a
-    merged list of all the elements in sorted order. You may modify
-    the passed in lists. Ideally, the solution should work in "linear"
-    time, making a single pass of both lists.
+    merged_list=[]
 
-    >>> linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
-    ['aa', 'bb', 'cc', 'xx', 'zz']
-    >>> linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz'])
-    ['aa', 'bb', 'cc', 'xx', 'zz']
-    >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
-    ['aa', 'aa', 'aa', 'bb', 'bb']
-    """
-    raise NotImplementedError
+    i=0
+    j=0
+
+    while :
+        if list1[i] <= list2[j]:
+            merged_list.append(list1[i])
+            i+=1
+        else:
+            merged_list.append(list2[j])
+            j+=1
+
+
+
+
+    if len(list1) < len(list2):
+        short_list=list1
+        long_list=list2
+    else:
+        short_list=list2
+        long_list=list1
+
+    j=0
+
+    for i in range(0,len(long_list)):
+        if long_list[i] >= short_list[j]:
+            long_list.insert(i,short_list[j])
+            j+=1
+
+    return long_list
+
+print linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc']) #['aa', 'bb', 'cc', 'xx', 'zz']
+print linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz']) #['aa', 'bb', 'cc', 'xx', 'zz']
+print linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb']) #['aa', 'aa', 'aa', 'bb', 'bb']
+ 

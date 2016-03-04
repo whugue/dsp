@@ -12,20 +12,6 @@ The following tutorials are very helpful in preparing for the bootcamp. It is hi
 [Greg Reda&#39;s Pandas Tutorial](http://www.gregreda.com/2013/10/26/using-pandas-on-the-movielens-dataset/)  
 [An Introduction to Pandas](http://synesthesiam.com/posts/an-introduction-to-pandas.html)
 
-###Linear Algebra
-
-You should be familiar with the following concepts:  
-* adding vectors
-* matrix multiplication
-* matrix inverse
-* how to visualize lines and planes and hyperplanes; dot product
-* systems of linear equations
-* eigenvalues
-
-####Linear Algebra Tutorials  
-* [Khan Academy Linear Algebra](https://www.khanacademy.org/math/linear-algebra)
-* [Kardi’s Interactive Linear Algebra Tutorial](http://people.revoledu.com/kardi/tutorial/LinearAlgebra/index.html)
-
 ###Statistics
 [Jeffrey Simonoff's Regression Course](http://people.stern.nyu.edu/jsimonof/classes/2301/pdf/)
 

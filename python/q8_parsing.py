@@ -9,11 +9,11 @@
 
 import csv
 
-  def read_data(data):
+def read_data(data):
    # COMPLETE THIS FUNCTION
 
-  def get_min_score_difference(self, parsed_data):
+def get_min_score_difference(self, parsed_data):
     # COMPLETE THIS FUNCTION
 
-  def get_team(self, index_value, parsed_data):
+def get_team(self, index_value, parsed_data):
     # COMPLETE THIS FUNCTION
