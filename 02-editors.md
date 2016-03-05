@@ -67,6 +67,18 @@ I chose to use nano. I wanted to use a easy-to-learn and basic terminal editor t
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I chose to use Sublime Text. I was attracted to ST due to its (a) "lightweight"/ quick to boot up nature (b) ease/ intuitiveness of use, especially for beginners, (c) it's attractive interface (I'm a sucker for pretty code) and (d) it's many plug-ins, which allow users to customize Sublime Text to their liking.
 
- 
+Some useful Sublime Text keyboard shortcuts are:
+
+a) ^O, ^S for opening and saving (simple, but useful)
+
+b) ^Z for undo, as I indend to make many mistakes!
+
+c) ^ for placing the cursor in multiple locations, allowing you to edit multiple points at once.
+
+c) ^D for identifying and going to all the cases of a specific word in a file, useful for finding and editing based on specific code keywords.
+
+
+In terms of customization, I have intalled the Dayle Rees color schemes, flake8 linter, and Parental Control plug-ins. I generally find extra "bells and whistles" to be distracting while coding, so I've only added a few plug ins up until this point.
+
