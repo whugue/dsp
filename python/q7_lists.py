@@ -23,7 +23,6 @@ print match_ends(['', 'x', 'xy', 'xyx', 'xx'])
 print match_ends(['aaa', 'be', 'abc', 'hello'])
 
 
-
 """
 Given a list of strings, return a list with the strings in sorted
 order, except group all the strings that begin with 'x' first.
@@ -46,26 +45,33 @@ def front_x(words):
 #Test Functions
 print front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa']) #['xaa', 'xzz', 'axx', 'bbb', 'ccc']
 print front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa']) # ['xaa', 'xcc', 'aaa', 'bbb', 'ccc']
-print front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark']) #['xanadu', 'xyz', 'aardvark', 'apple' 
+print front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark']) #['xanadu', 'xyz', 'aardvark', 'apple']
 
+
+"""
+Given a list of non-empty tuples, return a list sorted in
+ increasing order by the last element in each tuple.
+ e.g. [(1, 7), (1, 3), (3, 4, 5), (2, 2)] yields
+         [(2, 2), (1, 3), (3, 4, 5), (1, 7)].
+"""
 
 def sort_last(tuples):
-    """
-    Given a list of non-empty tuples, return a list sorted in
-    increasing order by the last element in each tuple.
-    e.g. [(1, 7), (1, 3), (3, 4, 5), (2, 2)] yields
-         [(2, 2), (1, 3), (3, 4, 5), (1, 7)].
+    new_tuples=[]
+    sorted_tuples=[]
 
-    >>> sort_last([(1, 3), (3, 2), (2, 1)])
-    [(2, 1), (3, 2), (1, 3)]
-    >>> sort_last([(2, 3), (1, 2), (3, 1)])
-    [(3, 1), (1, 2), (2, 3)]
-    >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
-    [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
-    """
-    raise NotImplementedError
+    for t in tuples:
+        new_tuples.append((t[len(t)-1], t))
 
+    new_tuples.sort()
 
+    for t in new_tuples:
+        sorted_tuples.append(t[1])
+
+    return sorted_tuples
+
+print sort_last([(1, 3), (3, 2), (2, 1)]) #[(2, 1), (3, 2), (1, 3)]
+print sort_last([(2, 3), (1, 2), (3, 1)]) #[(3, 1), (1, 2), (2, 3)]
+print sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)]) #[(2, 2), (1, 3), (3, 4, 5), (1, 7)]
 
 """
 Given a list of numbers, return a list where all adjacent equal
@@ -99,22 +105,8 @@ time, making a single pass of both lists.
 """
 
 def linear_merge(list1, list2):
-    merged_list=[]
 
-    i=0
-    j=0
-
-    while :
-        if list1[i] <= list2[j]:
-            merged_list.append(list1[i])
-            i+=1
-        else:
-            merged_list.append(list2[j])
-            j+=1
-
-
-
-
+    #Assign longer of the two lists to "long_list", shorter to "short_list"
     if len(list1) < len(list2):
         short_list=list1
         long_list=list2
@@ -122,16 +114,17 @@ def linear_merge(list1, list2):
         short_list=list2
         long_list=list1
 
-    j=0
-
+    #Loop through values of Long List and Insert Short List Values at appropriate indecies. Return new Long List.
     for i in range(0,len(long_list)):
-        if long_list[i] >= short_list[j]:
-            long_list.insert(i,short_list[j])
-            j+=1
+        if long_list[i] > short_list[0]:
+            long_list.insert(i,short_list[0])
+            del short_list[0]
 
     return long_list
 
+#Test Function
 print linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc']) #['aa', 'bb', 'cc', 'xx', 'zz']
 print linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz']) #['aa', 'bb', 'cc', 'xx', 'zz']
 print linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb']) #['aa', 'aa', 'aa', 'bb', 'bb']
- 
+
+
