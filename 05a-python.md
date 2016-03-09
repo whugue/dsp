@@ -36,7 +36,15 @@ It is faster to test whether or not a specific element belongs to a set than to 
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python's `lambda` is an operator used to create single-line, unnamed python functions. Lambda allows coders to create and implement simple functions without having to formally create a new function using a `def` command.
+
+>> Lambda's are handy when using the `filter` function, as they allow coders to define a filtering condition within `filter` itself. For example, if I wanted to filter a list to only even values, I could write:
+
+>> ` filtered = filter(lambda x: x%2==0, list)`
+
+>> Within a `sorted` function, I could use a lambda operator in the key to sort the list by descending values, without using the reverse=true option. I would so this by multiplying each list value by -1 in the `key` statement:
+
+>> `reversed=sorted(list, key=lambda x: x*-1)`
 
 ---
 
