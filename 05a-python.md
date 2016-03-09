@@ -67,7 +67,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
-There are 937 days between 1/2/2013 and 7/28/2015
+>> There are 937 days between 1/2/2013 and 7/28/2015
 
 b.  
 ```
@@ -75,7 +75,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
-There are 513 days between 12/31/2013 and 05/28/2015
+>> There are 513 days between 12/31/2013 and 05/28/2015
 
 c.  
 ```
@@ -83,7 +83,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
-There are 7,850 days betwene 1/15/1994 and 7/14/2015
+>> There are 7,850 days betwene 1/15/1994 and 7/14/2015
 
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
