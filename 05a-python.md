@@ -12,7 +12,11 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Both lists and tuples are Python data structures containing a sequence of values. Both lists and tuples can contain values of multiple types (e.g. stings, integers, and floats). Both are indexed, and specific elements within a list or tuple can be called using the object[index] syntax.
+
+The major difference between lists and tuples is that tuples are immutable. Unlike with lists, you cannot add, delete, or modify elements in a tuple after the tuple has been created. The constant nature of tuples allow them to be used as keys in dictionaries. Python dictionaries use hash values to assign keys to specific lookup locations; thus, if keys were allowed to be mutable, modifications to keys may lead to Python re-assigning hash values for these keys, interfering with the dictionary's lookup algorithm and preventing the dictionary from functioning properly.
+
+Another more subtle difference is that python lists are often used to store homogeneous elements (e.g. the number of GitHub commits to a specific repo per user), while tuples are often used to store heterogeneous elements (e.g. a specific GitHub user's user name and number of commits to a specific repo). Although using lists to store heterogeneous data is not syntactically incorrect, using tuples instead makes python code easier for other Python coders to understand.
 
 ---
 
@@ -20,7 +24,11 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Both lists and sets are python data structures containing a sequence of values of any type . Lists and sets are also both mutable (unless you specifically create an immutable set), allowing coders to add, remove, and modify elements. However, unlike a list, a set is unordered (i.e. indices are not assigned to the specific elements within a set). A set also cannot contain duplicate elements, while a list can. Further, while a set as a whole is mutable, the specific elements within a set must be hashable and hence immutable; elements of lists, by contrast, may be mutable. Finally, Python provides functions to test the union, intersection, and difference of elements in sets; no such functions are provided for lists.
+
+Lists are best used when you need your data to be ordered. For example, when I did the GitHub coding challenge, I wanted to look the accumulating number of d3.js commits over time. In order to correctly calculate cumulating commits, I needed to write a function that would loop through the sequence and, for each week, add the total number of commits that week to the previous week's total commit count. In order to correctly calculate the accumulation for each week, I needed to loop through the data in order from earliest to latest. As such, I needed to use an ordered list. By contrast, I would use a set to test the which elements are common between two different sequences, as only sets support the python "union" function that returns elements in common between two sequences. Sets are also useful for de-duplicating data sequences-as a set cannot have duplicates, converting a list to a set automatically de-duplicates the data.
+
+It is faster to test whether or not a specific element belongs to a set than to a list. Like dictionaries, sets use hash values to store elements in specific "slots". Hence, when testing for element membership in a set, Python only has to look for the element in that particular "slot" as defined by its hash value. On the other hand, when testing for element membership in a set, python has to look through the entire list.
 
 ---
 
