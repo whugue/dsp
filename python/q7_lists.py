@@ -56,18 +56,7 @@ Given a list of non-empty tuples, return a list sorted in
 """
 
 def sort_last(tuples):
-    new_tuples=[]
-    sorted_tuples=[]
-
-    for t in tuples:
-        new_tuples.append((t[len(t)-1], t))
-
-    new_tuples.sort()
-
-    for t in new_tuples:
-        sorted_tuples.append(t[1])
-
-    return sorted_tuples
+    return sorted(tuples, key=lambda x: x[len(x)-1])
 
 print sort_last([(1, 3), (3, 2), (2, 1)]) #[(2, 1), (3, 2), (1, 3)]
 print sort_last([(2, 3), (1, 2), (3, 1)]) #[(3, 1), (1, 2), (2, 3)]
