@@ -10,7 +10,7 @@ faculty=list(csv.reader(open("faculty.csv")))
 def degree_histogram(data):
 	deg_type_hist={}
 
-	for i in range(1,len(data)):
+	for i in range(1,len(data)): #start at index 1 to skip over var names :)
 		deg_types=re.split(" ",data[i][1],flags=re.I)
 
 		for j in range(0,len(deg_types)):
