@@ -52,7 +52,21 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python list comprehensions provide an easy way to create python lists using well-known mathematical notation. In many ways, list comprehensions provide the same functionality as `map` and `filter` functions using internal `lambda`. For example:
+
+>>`up=[x.upper() for x in ["a","b","c"]]` is equivalent to `up=map(lambda x: x.upper(), ["a","b","c"])
+>>`evens=[x for x in [1,2,3,4,5] if x%2==0]` is equivalent to `evens=filter(lambda x: x%2==0, [1,2,3,4,5])`
+
+>>Both `map`/`filter` and list comprehensions have similar capabilities, and which method a python coder chooses to use is often a matter of personal preference. Personally, I prefer list comprehensions as I find the syntax to be more intuitive. Further, I find list comprehensions to be more general/ flexible - a coder can use the same list comprehension mechanisms to implement a variety of list functions (mapping, filtering, and more), while the `map` and `filter` functions provide only one capability each.
+
+>>Set comprehensions work in the same way as list comprehensions, but syntactically use curly brackets as opposed to square ones. Since sets cannot contain duplicate entries, one can use set comprehension to remove duplicates from a list, like so:
+
+>>`deduped={x for x in [1,1,2,3,3,3,4,5]}`
+
+>>You can also use much of the same list/set comprehension logic to create dictionaries. For example, I can create a dictionary with each number 0-24 as keys and the square of the key as values like so:
+
+>>`sqaures={x:x**2 for x in range(0,25)}`
+
 
 ---
 
