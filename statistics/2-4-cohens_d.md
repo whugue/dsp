@@ -7,7 +7,7 @@
 from nsfg import ReadFemPreg
 from thinkstats2 import CohenEffectSize
 
-nsfg=ReadFemPreg() #Read NSFG Data into Pandas Data Frame
+nsfg=ReadFemPreg()
 
 
 first=nsfg[(nsfg.outcome==1) & (nsfg.birthord==1)]["totalwgt_lb"]
