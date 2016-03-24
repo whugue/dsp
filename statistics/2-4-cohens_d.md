@@ -7,11 +7,9 @@
 from nsfg import ReadFemPreg
 from thinkstats2 import CohenEffectSize
 
-#Read NSFG Data into Pandas Data Frame
-nsfg=ReadFemPreg() 
+nsfg=ReadFemPreg() #Read NSFG Data into Pandas Data Frame
 
-
-##2-4) Compute Cohen's d for Infant Weight among First/ Later Births
+#2-4) Compute Cohen's d for Infant Weight among First/ Later Births
 first=nsfg[(nsfg.outcome==1) & (nsfg.birthord==1)]["totalwgt_lb"]
 other=nsfg[(nsfg.outcome==1) & (nsfg.birthord>1)]["totalwgt_lb"]
 
