@@ -2,12 +2,12 @@
 
 >>The actual mean number of kids is `0.820618884735`, while the biased mean number of kids is `2.39666537418`. The distribution for actual number of kids vs. biased number of kids can be seen in the bar graph below:
 
-
-
 >>For this exercise, I chose not to use Downey's pre-defind Histograpm and PMF classes, as I couldn't follow in his code creating them very well. Instead, I wrote my own functiosn to create histograms and PMF's as dictionary opjects. See below:
 
-				#ThinkStats Exercise 3-1 (The Class Size Paradox & Biased Distributions)
 
+
+
+				#ThinkStats Exercise 3-1 (The Class Size Paradox & Biased Distributions)
 				import thinkstats2
 				import pandas as pd
 				import copy as cp
