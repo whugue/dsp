@@ -1,6 +1,6 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
->>Cohen's d for total baby weight between first borns and other babies is `-0.0886729270726`. The negative sign on Cohen's d indicates that first born children, on average, weigh less than their later siblings. However, the relatively small size of Cohen's d indicates this difference is slight - less than 1/10th of a standard deviation. Cohen's d for pregnacy length is `-0.0313117858337`. As such, the effect size for differency in pregnancy length is even smaller than the effect for weight - less that 1/20th of a standard deviation.
+>>Cohen's d for total baby weight between first borns and other babies is `-0.0886729270726`. The negative sign on Cohen's d indicates that first born children, on average, weigh less than their later siblings. However, the relatively small size of Cohen's d indicates this difference is slight - less than 1/10th of a standard deviation. Cohen's d for pregnancy length is `-0.0313117858337`. As such, the effect size for difference in pregnancy length is even smaller than the effect for weight - less that 1/20th of a standard deviation.
 
 >>I used Downey's Cohen's d function to calculate Cohen's d for the NSFG data. The code I used was:
 
