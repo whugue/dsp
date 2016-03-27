@@ -4,7 +4,6 @@
 
 <img src="actual v biased kids.png">
  
-
 >>For this exercise, I chose not to use Downey's pre-defind Histograpm and PMF classes, as I couldn't follow in his code creating them very well. Instead, I wrote my own functiosn to create histograms and PMF's as dictionary opjects. See below:
 
 				#ThinkStats Exercise 3-1 (The Class Size Paradox & Biased Distributions)
