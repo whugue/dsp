@@ -8,7 +8,7 @@
 
 <img src="Random_Number_CDF.png">
 
-Below is the code I used to produce a list of 1,000 random integers using random.random() and create the corresponding PMF and CDF's
+>>Below is the code I used to produce a list of 1,000 random integers using random.random() and create the corresponding PMF and CDF's
 
 
 	##Exercise 4-2 (Distribution of Random Numbers 0-1)
