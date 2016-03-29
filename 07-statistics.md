@@ -75,11 +75,11 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 >>* `P(IT)=1/300 ~0.0033` (where IT=Identical Twin)
 >>* `P(FT)=1/125 =0.0080` (where FT=Fraternal Twin)
 
->>In order to find the probabiltiy of Elvis' twin brother being identical, we need to update P(IT) to include the data that Elvis did, indeed, have a twin brother. Using Bayes theorem, we can calculate:
+>>In order to find the probability of Elvis' twin brother being identical, we need to update P(IT) to include the data that Elvis did, indeed, have a twin brother. Using Bayes theorem, we can calculate:
 
 >>`P(IT|TB) = (P(IT) P(TB|IT))/P(TB)` (where TB=Twin Brothers)
 
->>`P(TB|IT)` gives the probability of identical twins being a twin brothers (i.e. male). Since identical twins always have to be the same sex, there are two possibleidentical twin sets: boy-boy and girl-girl. I assume each is equally likely; hence `P(TB|IT)=0.5`
+>>`P(TB|IT)` gives the probability of identical twins being a twin brothers (i.e. male). Since identical twins always have to be the same sex, there are two possible identical twin sets: boy-boy and girl-girl. I assume each is equally likely; hence `P(TB|IT)=0.5`
 
 >>`P(TB)=P(IT)P(TB|IT)+P(FT)P(TB|FT)`. `P(TB|FT)` gives the probability of fraternal twins being twin brothers. Since fraternal twins do NOT have the be the same gender, there are four possible fraternal twin sets: boy-boy, boy-girl, girl-boy, girl-girl. I assume each is equally likely; hence `P(TB|FT)=0.25`.
 
