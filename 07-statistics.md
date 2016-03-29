@@ -72,8 +72,8 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 >>We are given the prior probabilities of identical and fraternal twin births in the general population:
 
->>`P(IT)=1/300 ~0.0033` (where IT=Identical Twin)
->>`P(FT)=1/125 =0.0080` (where FT=Fraternal Twin)
+>>* `P(IT)=1/300 ~0.0033` (where IT=Identical Twin)
+>>* `P(FT)=1/125 =0.0080` (where FT=Fraternal Twin)
 
 >>In order to find the probabiltiy of Elvis' twin brother being identical, we need to update P(IT) to include the data that Elvis did, indeed, have a twin brother. Using Bayes theorem, we can calculate:
 
