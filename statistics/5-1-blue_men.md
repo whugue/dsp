@@ -4,8 +4,8 @@
 
 >>According to the nifty calculator here http://www.thecalculatorsite.com/conversions/common/cm-to-feet-inches.php, I converted the shortest and tallest blue men's heights into centimeters.
 
->>*5'10" ~177.8cm
->>*6'1" ~185.4cm
+>>* `5'10" ~177.8cm`
+>>* `6'1" ~185.4cm`
 
 >>I think use the following code to estimate the percentage of eligible males:
 
