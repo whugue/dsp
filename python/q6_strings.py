@@ -131,9 +131,7 @@ def not_bad(s):
     if not_i > 0 and bad_i > 0 and not_i < bad_i:
         new_word_list=word_list[0:not_i]
         new_word_list.append("good")
-
-        for i in range(bad_i+1,len(word_list)):
-            new_word_list.append(word_list[i])
+        new_word_list+=new_word_list[bad_i+1:]
 
     else:
         new_word_list=cp.copy(word_list)
