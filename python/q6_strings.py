@@ -17,7 +17,7 @@ def donuts(count):
         return "Number of donuts: many"
 
 #Test Function
-#print donuts(4)
+print donuts(4)
 print donuts(9)
 print donuts(10)
 print donuts(99)
@@ -131,7 +131,7 @@ def not_bad(s):
     if not_i > 0 and bad_i > 0 and not_i < bad_i:
         new_word_list=word_list[0:not_i]
         new_word_list.append("good")
-        new_word_list+=new_word_list[bad_i+1:]
+        new_word_list+=word_list[bad_i+1:]
 
     else:
         new_word_list=cp.copy(word_list)
