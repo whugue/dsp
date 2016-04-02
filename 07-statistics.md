@@ -95,7 +95,14 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>>The main difference between frequentist and Bayesian statistics lies in how probabilities are used to make statistical inferences about a specific population. Frequentists only use probabilities to make claims about sample statistics only, while Bayesians use probability more broadly to make claims about the population as a whole.
+
+>>For example, let's say we were interested in determining the average income of all 20-29 year old Crown Heights residents. We draw a sample and compute the sample mean income (i) to use as an estimator of the unobserved population mean (I). Using frequentist statistical inference, we could simulate re-sampling to create a distribution modeling the probability of a specific sample mean occurring over many samplings (i.e. a sampling distribution) and determine the range where 90% of our sample means lie (i.e. the 90% confidence interval).
+
+>>However, using the frequentist statistical inference described above, we could not make any claims about the likelihood of our sample mean (i) being an accurate representation of the actual population mean. To frequentists, probability only represents the proportion of times an observed event occurs (i.e. obtaining a specific sample mean) over many repeated experiments, rather than the level of belief a specific hypothesis might be true. 
+
+>>A Bayesian approach to this same problem would involve creating a prior distribution for I, which models the probability a specific income is the mean for the actual population prior to obtaining any data, and then updating that distribution after analyzing the sample data collected to create a posterior distribution. We could then take the 5th and 95th percentiles of the posterior distribution to create the 90% credible interval, which contains the interval that has a 90% chance of containing I. Note this 90% credible interval is subtly different from the frequentist 90% confidence interval, which only tells us the interval the sample mean occurs in 90% of the time, rather than the interval the population mean is most likely to fall in. Indeed, a common misinterpretation of the confidence interval is that it has the same explanatory power as the credible interval, but this is untrue.
+
 
 ---
 
