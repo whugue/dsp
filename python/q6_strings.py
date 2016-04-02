@@ -1,6 +1,8 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
+import copy as cp
+
 """
 Given an int count of a number of donuts, return a string of the
 form 'Number of donuts: <count>', where <count> is the number
@@ -115,6 +117,7 @@ good!
 
 def not_bad(s):
     word_list=s.split()
+    new_word_list=[]
 
     not_i=-1
     bad_i=-1
@@ -126,18 +129,23 @@ def not_bad(s):
             bad_i=i
 
     if not_i > 0 and bad_i > 0 and not_i < bad_i:
-        word_list=word_list[0:not_i]
-        word_list.append("good")
+        new_word_list=word_list[0:not_i]
+        new_word_list.append("good")
 
+        for i in range(bad_i+1,len(word_list)):
+            new_word_list.append(word_list[i])
 
-    return " ".join(word_list)
+    else:
+        new_word_list=cp.copy(word_list)
+
+    return " ".join(new_word_list)
 
 #Test Function
 print not_bad("This movie is not so bad") #This movie is good
 print not_bad("This dinner is not that bad") #This dinner is good
 print not_bad("This tea is not hot") #this tea is not hot
 print not_bad("It's bad yet not") #It's bad yet not
-
+print not_bad("This movie is not so bad I think") #This movie is good I think
 
 """
 Consider dividing a string into two halves. If the length is even,
